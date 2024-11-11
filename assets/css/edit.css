@@ -1,0 +1,947 @@
+/*#region Sidebar*/
+
+/*Adjusting sidebar display */
+
+#sidebar .inner
+{
+    display: block;
+}
+
+@media screen and (max-width:1280px)
+{
+    #sidebar .inner
+    {
+        display: flex;
+    }
+
+    #sidebar h1,
+    #sidebar h2,
+    #sidebar h3
+    {
+        height: auto;
+        margin: auto;
+    }
+}
+
+nav{
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 1500px;
+    padding-right:10px;
+    margin-bottom: 50px;
+    height: auto;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+}
+
+/*#region Nav add page*/
+
+#sidebar
+{
+    /* padding: 1.5em 1.5em 0.5em 1.5em; */
+    padding: 0; 
+}
+
+.edit-page-reorder-container
+{
+    padding: 0px 2px 0px 0px;
+    margin: auto;
+    display: flex;
+}
+
+#sidebar .edit-reorder-up , #sidebar .edit-reorder-down
+{
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+#sidebar .edit-reorder-up > img, #sidebar .edit-reorder-down > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.add-button{
+    padding: 0;
+    margin-top:25px;
+    line-height: 0px;
+}
+
+.add-page-button-container > div
+{
+    padding: 0;
+}
+
+.add-page-button-container{
+    text-align: center;
+}
+
+.add-page-button-container > .add-page-field{
+    background-color: rgba(255, 255, 255.5,0.5);
+}
+
+nav ul li .edit-pagename-field
+{
+    background-color: rgba(255, 255, 255.5,0.25);
+    width:65%;
+    text-align: inherit;
+    /* font-family: Brandon;
+    font-size: .6em;
+    font-weight: bold; */
+}
+
+/*#endregion Nav add page*/
+
+/*#region Edit page buttons*/
+
+.page-edit-buttons-container button
+{
+    padding: 0px;
+    line-height: 40px;
+    height: fit-content;
+}
+
+/* .edit-content-container button, .main-content-edit-row button, .page-edit-buttons-container button
+{
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+} */
+
+.edit-content-container button img
+{
+    width: 90%;
+}
+
+.page-edit-buttons-container .edit-page, .page-edit-buttons-container .remove-page
+{
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+.page-edit-buttons-container .edit-page > img, .page-edit-buttons-container .remove-page > img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.page-edit-buttons-container
+{
+    padding-left:10px;
+    margin: auto;
+    margin-right: 0;
+}
+/*#endregion Edit page buttons*/
+
+/*#region Draggable content toolbox */
+
+.content-toolbox-container{
+    background-color: darkslategrey;
+    width:100%;
+    padding: 40px 10px 30px 10px;
+    /* height: 25%; */
+    position: fixed;
+    /* bottom: 0; */
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1280px) {
+    .content-toolbox-container
+    {
+        display: none;
+    }
+}
+.content-toolbox-container button{
+    padding: 0px 15px 0px 15px;
+}
+
+.toolbox-title-container, .button-toolbox-container, .add-page-button-container{
+    padding: 0;
+    margin: auto;
+}
+
+.button-toolbox-container{
+    position: relative;
+    padding: 10px;
+}
+
+.button-toolbox-container p, .dragged-toolbox-item p{
+    font-size: 16px;
+    position: relative;
+    color : rgba(255, 0, 89.25, .75);
+    font-family: Brandon;
+    padding: 0px  5px 0px 5px;
+}
+
+.toolbox-main-title{
+    font-family: Brandon;
+    text-transform: uppercase;
+}
+
+.button-toolbox-container button, .dragged-toolbox-item{
+    border-color : rgba(255, 0, 89.25, .75) !important;
+    border-width : 4px !important;
+    padding: 0;
+}
+
+.dragged-toolbox-item{
+    mix-blend-mode: difference;
+}
+
+/*#endregion Draggable content toolbox */
+
+
+/*#endregion Sidebar*/
+
+/*#region Inner page*/
+
+.main-content-row p, .main-content-row h1, .main-content-row h2, .main-content-row h3, .main-content-row h4, .main-content-row h5, .main-content-row h6
+{
+    margin: 0;
+}
+
+.main-content-edit-row
+{
+    margin : 15px 0px 15px 0px;
+}
+
+.main-content-row
+{
+    margin : 0;
+}
+
+
+
+/*#region Drop content receiver*/
+
+.receive-drop-container
+{
+    /* background-color: aqua; */
+    min-height: 75px;
+}
+
+.receive-drop
+{
+    border: 2px #ff0059  dashed;
+    border-radius: 15px;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(255, 0, 89.25, .05);
+    display: table;
+}
+
+.receive-drop-text
+{
+    font-style: italic;
+    font-family: Brandon;
+    opacity: 0.75;
+    margin: 0;
+    font-size: larger;
+    display: table-cell;
+    vertical-align: middle;
+    padding : 5px;
+}
+
+.edit-content-container button
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    line-height: 5px;
+    padding: 6px;
+    max-width: 48px;
+    max-height : 48px;
+    min-width: 48px;
+    min-height : 48px;
+    transition: all ease 0.3s;
+}
+
+.edit-content-container button:hover
+{
+    padding: 2px;
+    background-color: rgba(255, 0, 89.25, .55);
+    transition: all ease 0.3s;
+}
+
+/*#endregion Drop content receiver*/
+
+.edit-content-container button:first-child
+{
+    margin-bottom : 15px;
+}
+
+.edit-content-container
+{
+    text-align: center;
+    display: block;
+    padding: 0px 1em 0px 1em;
+}
+
+@media screen and (max-width : 980px)
+{
+    /* .edit-content-container button
+    {
+        max-width: 32px;
+        max-height : 32px;
+        min-width: 32px;
+        min-height : 32px;
+    } */
+}
+
+
+.content-edit-container .edit-text, .content-edit-container .edit-textarea
+{
+    background-color: rgba(255, 0, 89.25, .25);
+}
+
+.edit-text
+{
+    display: inline-table;
+    width: 100%;
+    height: 100%;
+}
+
+/* .edit-list-text
+{
+    width: 100%;
+    height: 100%;
+} */
+
+.edit-textarea, .content-edit-box input[type="text"], .table-title-edit, .table-description-edit
+{
+    color : white;
+    font-weight: bold;
+}
+
+.edit-textarea
+{
+    resize:none;
+}
+
+.edit-list-container > .row:nth-child(n + 2)
+{
+    margin-top:15px;
+}
+
+.edit-list-container
+{
+    text-align: center;
+}
+
+
+.edit-list-container .edit-list-append-button
+{
+    margin-top : 20px;
+    background-color: rgba(255, 0, 89.25, .35);
+    height: auto;
+    padding: 0;
+    line-height: 0;
+}
+/* rgba(255, 0, 89.25, .35); */
+/* rgba(255, 0, 89.25, .55) */
+@keyframes simpleBackgroundFade
+{
+    from
+    {
+        background-color: var(--s);
+    }
+    to
+    {
+        background-color: var(--e);
+    }
+}
+
+.edit-list-container .edit-list-append-button:hover, .content-edit-list-remove-item:hover
+{
+    animation: simpleBackgroundFade 0.3s forwards;
+    --s :rgba(255, 0, 89.25, .35);
+    --e: rgba(255, 0, 89.25, .55);
+}
+
+.edit-list-container .content-edit-list-remove-item
+{
+    padding: 0;
+    background-color: rgba(255, 0, 89.25, .35);
+    height: auto;
+    line-height: 0;
+    margin:auto;
+    width: auto;
+}
+
+.edit-snippet-text
+{
+    font-family: Brandon;
+    font-style: italic;
+    opacity: 0.75;
+    text-align: center;
+    margin:0;
+}
+
+.interaction-overlay-container
+{
+    position: relative;
+}
+.interaction-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    cursor: pointer;
+}
+
+
+.interaction-overlay img{
+    margin: auto;
+    position: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    pointer-events: none;
+    height: 80%;
+    width: fit-content;
+    
+}
+
+.image-container
+{
+    position: relative;
+}
+
+.video-single-container
+{
+    display: block;
+}
+
+.content-edit-box
+{
+    text-align: center;
+}
+
+.content-edit-container .edit-videolink-input
+{
+    margin: 0;
+    width: 75%;
+    display: inline;
+    background-color: rgba(255, 0, 89.25,.55);
+}
+
+.content-edit-container .table-title-edit
+{
+    margin-bottom: 10px;
+    scrollbar-width: 2px;
+    font-size: 22px;
+}
+
+.content-edit-container .edit-textarea::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+.content-edit-container .edit-textarea::-webkit-scrollbar-thumb
+{
+    border-radius: 100px;
+	background-color: rgba(255, 0, 89.25,.55)
+}
+
+.table-description-edit
+{
+    font-size: 16px;
+}
+
+.table-listitem-edit > .edit-textarea
+{
+    font-size: 16px;
+}
+
+.feature-text-container .table-list-edit
+{
+    list-style: none;
+}
+
+.feature-text-container .table-list-edit > .table-listitem-edit
+{
+    margin-top: 20px;
+}
+
+.feature-text-container .table-list-edit > .table-listitem-edit
+{
+    display: inline-flex;
+}
+
+.feature-text-container .table-list-edit > .table-listitem-edit::before
+{
+    content: url('../../images/icons/remove.png');
+    display: inline-block;
+    margin: auto;
+    cursor:pointer;
+}
+
+.table-listitem-edit > .edit-textarea
+{
+    width:80%;
+    float: right;
+}
+
+.table-list-edit
+{
+    background-color: rgba(255, 0, 89.25, .4);
+    padding: 10px;
+    margin-top : 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+}
+
+.delete-cell-button
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0;
+    display: flex;
+}
+
+.delete-cell-button > img
+{
+    margin: auto;
+}
+
+.toggle-tooltip-button
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0;
+}
+
+@media screen and (max-width : 1680px)
+{
+    .toggle-tooltip-button
+    {
+        position: absolute;
+        top:30px;
+        right: 5px;
+        padding: 0;
+    }
+
+    .content-edit-box, .content-video
+    {
+        padding: 0;
+    }
+}
+
+.toggle-tooltip-button, .toggle-tooltip-button > img
+{
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+}
+
+video
+{
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+
+.blocking-video-container
+{
+    display: block;
+}
+
+
+.edit-tooltip-container
+{
+    position: relative;
+}
+
+.edit-tooltip
+{
+    margin-top: 15px;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.table-cell-hyperlink-edit
+{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.table-cell-add-cell-img
+{
+    height: auto;
+    margin: auto;
+}
+.table-cell-add-cell-btn
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 89.25, .15);
+    transition: all 0.15s linear;
+    padding: 0;
+    display: flex;
+}
+
+.table-cell-add-cell-btn:hover
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    transition: all 0.3s linear;
+}
+
+.edit-table-remove-content-button
+{
+    display: flex;
+    padding: 0;
+    height: auto;
+    margin: auto;
+    background-color: rgba(255, 0, 89.25, .15);
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (min-width: 1680px)
+{
+    .edit-table-remove-content-button-box
+    {
+        padding-left: 10px;
+    }
+}
+
+.edit-table-remove-content-button-box
+{
+    margin: auto;
+    padding: 0px 0px 0px 5px;
+}
+
+.edit-table-remove-content-button-box img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.edit-table-remove-content-button:hover
+{
+    
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 0, 89.25, .35);
+}
+
+.edit-table-remove-content-button img
+{
+    margin:auto
+}
+.edit-table-add-items-container
+{
+    padding: 10px;
+    border-top: solid 2px rgba(255, 0, 89.25, .35);
+    margin-top : 10px;
+}
+
+.edit-table-add-items-container button
+{
+    background-color: rgba(255, 0, 89.25, .15);
+    padding : 0px 20px 0px 20px;
+    transition: all 0.3s linear;
+}
+
+.edit-table-add-items-container button:hover
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    padding : 0px 30px 0px 30px;
+    transition: all 0.3s linear;
+}
+
+.edit-table-add-items-container p
+{
+    margin: 0;
+    font-family: Brandon;
+    font-size: 14px;
+    color: white;
+}
+
+.edit-table-description
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.edit-reorder-container
+{
+    padding: 0px 0px 0px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.edit-reorder-container button
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    transition: all 0.3s linear;
+    padding: 8px;
+    margin: auto;
+    display: block;
+}
+
+.edit-reorder-container button img
+{
+    padding: 0;
+}
+
+.edit-reorder-container button:hover
+{
+    background-color: rgba(255, 0, 89.25, .55);
+    padding: 4px;
+    transition: all 0.3s linear;
+}
+
+.edit-reorder-container img
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.images-hori-container
+{
+    padding: 0;
+    margin: 0;
+}
+
+.edit-reorder-container .edit-order-input
+{
+    background-color: rgba(255, 0, 89.25, .55);
+    padding: 0;
+    text-align: center;
+    font-family: Brandon;
+    margin-bottom: 10px;
+}
+
+.edit-reorder-container > .edit-reorder-up
+{
+    margin-bottom: 10px;
+}
+
+/*#region Save data */
+
+.edit-save-content-container
+{
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    margin-left:10px;
+}
+
+.edit-save-content-container > button
+{
+    background-color: rgba(255, 0, 89.25, .15);
+    height: 64px;
+    width: 64px;
+    margin: 0;
+    padding: 5px;
+    transition: all 0.3s linear;
+}
+
+.edit-save-content-container > button:hover
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    padding: 0;
+    transition: all 0.3s linear;
+}
+
+.edit-save-content-container > button > img
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.inner .edit-intro-button > img
+{
+    height: 100%;
+    padding: 2px;
+}
+
+.inner .edit-intro-button
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    transition: all 0.3s linear;
+    padding: 4px;
+    margin: auto;
+    display: block;
+    min-width: 128px;
+}
+
+.inner .edit-intro-button:hover
+{
+    background-color: rgba(255, 0, 89.25, .55);
+    padding: 0;
+    transition: all 0.3s linear;
+}
+
+.edit-intro-container
+{
+    text-align: center;
+    padding: 0;
+}
+
+.edit-intro-content-container
+{
+    width: inherit;
+}
+
+.edit-intro-content-container > *
+{
+    
+    text-align: center;
+    padding: 0;
+}
+
+.edit-intro-content-container > .edit-title
+{
+    font-size: xx-large;
+}
+
+.intro-content-container, .edit-intro-content-container
+{
+    padding: 0;
+}
+
+.edit-intro-content-container > .edit-sumary
+{
+    font-size: x-large;
+    padding: 20px 0px 20px 0px;
+}
+
+.edit-intro-content-container > .edit-sumary, .edit-intro-content-container > .edit-title
+{
+    margin-bottom: 20px;
+    background-color: rgba(255, 0, 89.25, .35);
+}
+
+.content-edit-box .edit-input-images-amount, .content-edit-box .edit-input-images-per-row
+{
+    background-color: rgba(255, 0, 89.25, .35);
+    text-align: center;
+    font-family: Brandon;
+}
+
+.content-edit-box .edit-input-images-amount::placeholder,.content-edit-box .edit-input-images-per-row::placeholder
+{
+    font-size: medium;
+}
+
+.edit-vertical-snippet
+{
+    margin : auto 0px auto 0px;
+    padding: 10px;
+}
+
+.edit-interaction-snippet
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.edit-image-input-container
+{
+    margin:15px 0px 15px 0px;
+}
+
+.edit-snipppet-right
+{
+    text-align: right;
+}
+
+.edit-snipppet-left
+{
+    text-align: left;
+}
+
+.edit-intro-bg > .receive-drop
+{
+    padding: 0;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 89.25, .35);
+    cursor: pointer;
+}
+
+
+/*#region Page cards*/
+
+
+.edit-pagecards-container 
+{
+    text-align: center;
+}
+.edit-pagecards-container > .edit-pagecards-button
+{
+    background-color: rgba(255, 0, 89.25, .35);
+}
+
+.disabled-link
+{
+    cursor: inherit;
+}
+
+.edit-card-name
+{
+    font-weight: bold;
+    font-family: Brandon;
+}
+
+.edit-card-initials
+{
+    margin: 10px 0px 0px 10px;
+}
+
+.cards-drawer input
+{
+    padding: 0;
+}
+
+.edit-card-name
+{
+    margin-bottom: 5px;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#endregion Inner page*/
+
+@media screen and (max-width: 1280px) {
+
+    #sidebar>.inner
+    {
+        height: auto;
+    }
+
+    #sidebar {
+        height: auto;
+        left: 0;
+        line-height: 3.5em;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    nav
+    {
+        height: auto;
+        display: inline-table;
+        padding: 1.5em 1.5em 0.5em 1.5em;
+    }
+
+    .page-item-container, .page-item-container > div, .page-item-container > a, .edit-page-reorder-container
+    {
+        margin: 0;
+    }
+}
