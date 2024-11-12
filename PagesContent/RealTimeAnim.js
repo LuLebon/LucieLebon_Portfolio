@@ -25,7 +25,7 @@ let Tool = {
         },
         {
             "Type": "Text",
-            "Value": "Le travail technique réalisée sur ces deux séries a été présenté au public lors de plusieurs conférences organisées par Unreal et devant des étudiants en études supérieures (filières ATI de l’université de Paris et Filière JIN de l’ENSIIE & TSP)."
+            "Value": "Le travail technique réalisé sur ces deux séries a été présenté au public lors de plusieurs conférences organisées par Unreal et devant des étudiants en études supérieures (filières ATI de l’université de Paris et Filière JIN de l’ENSIIE & TSP)."
         },
         {
             "Type" : "Video",
@@ -47,7 +47,7 @@ let Tool = {
         },
         {
             "Type": "Text",
-            "Value": "Les outils de production ont permis une semi automatisation de: "
+            "Value": "Les outils de production ont permis une semi automatisation de : "
         },
         {
             "Type" : "List",
@@ -59,7 +59,7 @@ let Tool = {
         },
         {
             "Type": "Text",
-            "Value": "La Boardmachine, elle, permet aux boarders de créer des mises en scène 3D avec les différents assets de la série (décors, personnages…). Développé sur Unity, cet outil est fournit aux boarders sous forme d’exécutable. Couplé à un module de contrôle des accès, cela permet aux boarders à distance d’utiliser l’outil sur leur propre machine, sans connexion aux infrastructures miam. Cet outil a permit d’améliorer la qualité des boards et de réduire le nombre de retakes. Équipée du module de livelink, la boardmachine a également été utilisée par notre prestataire Jungler à l’étape de l’animation."
+            "Value": "La Boardmachine, elle, permet aux boarders de créer des mises en scène 3D avec les différents assets de la série (décors, personnages…). Développé sur Unity, cet outil est fournit aux boarders sous forme d’exécutable. Couplé à un module de contrôle des accès, cela permet aux boarders en télétravail d’utiliser l’outil sur leur propre machine, sans connexion aux infrastructures miam. Cet outil a permis d’améliorer la qualité des boards et de réduire le nombre de retakes. Équipée du module de livelink, la boardmachine a également été utilisée par notre prestataire Jungler à l’étape de l’animation."
         },
         {
             "Type" : "Video",
@@ -71,7 +71,7 @@ let Tool = {
         },
         {
             "Type": "Text",
-            "Value": "J’ai aussi travaillé à l’optimisation des performance et du poids de Le Voyage de la Chose, un jeu plateformer réalisé sur Unity et dans lequel on incarne la Chose, un des personnage de Edmond et Lucy."
+            "Value": "J’ai aussi travaillé à l’optimisation des performancs et du poids de Le Voyage de la Chose, un jeu plateformer réalisé sur Unity et dans lequel on incarne la Chose, un des personnage de Edmond et Lucy."
         }
     ],
     "Dev": [
@@ -97,7 +97,7 @@ let Tool = {
         },        
         {
             "Type": "Text",
-            "Value": "Suite à l’arrivée des artistes a commencé une seconde vague de développement pour : "
+            "Value": "Suite à l’arrivée des artistes a commencé une seconde vague de développements pour : "
         },        
         {
             "Type": "List",

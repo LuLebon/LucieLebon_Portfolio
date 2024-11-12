@@ -13,7 +13,7 @@ let Pages =
       "Initials": "JV",
       "DatasFile": "./PagesContent/VideoGames.js",
       "Page": "VideoGames.html",
-      "Short": "Développeuse sur plusieurs jeux vidéos. Développement orientés moteur.",
+      "Short": "Développeuse sur plusieurs jeux vidéos. Développements orientés moteur.",
       "InNavbar": true
    },
    "VirtualReality": {

@@ -39,7 +39,7 @@ let Catego = {
         },          
         {
             "Type": "Text",
-            "Value": "J’étais en charge de l’intégration de l’audio et ais développé plusieurs outils dans ce but. Le principal était un système d’audio matérials : Dans une zone sélectionné, un audio-material va être associé automatiquement à chaque mesh en fonction de sa texture."
+            "Value": "J’étais en charge de l’intégration de l’audio et ais développé plusieurs outils dans ce but. Le principal était un système d’audio matérials : Dans une zone sélectionnée, un audio-material va être associé automatiquement à chaque mesh en fonction de sa texture."
         }, 
         {
             "Type" : "Image",

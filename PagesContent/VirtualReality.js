@@ -9,7 +9,7 @@ let Catego = {
         },
         {
             "Type": "Text",
-            "Value": "Lors de notre seconde année d’étude à L’ENSIIE, avec trois autres étudiants nous avons travaillé sur un projet de jeu sur HTC Vive, le casque de réalité virtuelle de l’époque. C’était le projet Nice Hat. Cela a aboutit à la création d’un prototype composé de plusieurs mini-jeux."
+            "Value": "Lors de notre seconde année d’étude à L’ENSIIE, avec trois autres étudiants nous avons développé un jeu sur HTC Vive, le casque de réalité virtuelle leader de l’époque. C’était le projet Nice Hat. Cela a aboutit à la création d’un prototype composé de plusieurs mini-jeux que nous avions fait testé au public."
         },
         {
             "Type" : "Video",
@@ -23,11 +23,11 @@ let Catego = {
         },
         {
             "Type": "Text",
-            "Value": "Lors de les études, j’étais membre du bureau de l’association de réalité virtuelle de mon école."
+            "Value": "Pendant mes études, j’étais membre du bureau de l’association de réalité virtuelle de mon école."
         },
         {
             "Type": "Text",
-            "Value": "Avec les autres membres de l’association j’ai participé par deux fois à la Game Jam du laval Virtual : "
+            "Value": "Avec les autres membres de l’association j’ai participé par deux fois à la Game Jam du Laval Virtual : "
         },          
         {
             "Type": "List",
