@@ -160,28 +160,6 @@ function fillSection(sectionContent, sectionRootDiv)
 					fiche.appendChild(descriptionFiche);			
 					break;
 
-				//#region Old Table
-				// case 'Table':
-				// 	let drawer = document.createElement('section');
-				// 	currentSubContainer.appendChild(drawer);
-					
-				// 	if (sectionContent[index].Value >= 3)  //Meaning we have an icon
-				// 	{
-				// 		//TODO : add icon
-				// 	}
-					
-				// 	let nameDrawer = document.createElement('h3');
-				// 	nameDrawer.textContent = sectionContent[index].Value[0];
-				// 	drawer.appendChild(nameDrawer);
-
-				// 	let descriptionDrawer = document.createElement('p');
-				// 	descriptionDrawer.textContent = sectionContent[index].Value[1];
-
-				// 	console.log(sectionContent[index].Value[1]);
-				// 	drawer.appendChild(descriptionDrawer);
-				// 	break;
-				//#endregion
-
 				case 'Table':
 
 					let featuresList = document.createElement('div');
@@ -390,14 +368,15 @@ function fillSection(sectionContent, sectionRootDiv)
 					//Is it a youtube or video path ?
 					if(matchYoutubeUrl(sectionVideoPathValue) || matchVimeoURL(sectionVideoPathValue))
 					{
-						createSourceElement(videoGrpContainer, 'iframe', videoPath, 'video-info', videoSize, {"allow" : "autoplay; fullscreen; picture-in-picture", "frameborder": "0"});
+						//createSourceElement(videoGrpContainer, 'iframe', videoPath, 'video-info', videoSize, {"allow" : "autoplay; fullscreen; picture-in-picture", "frameborder": "0"});
+						createSourceElement(videoGrpContainer, 'iframe', videoPath, 'video-info', videoSize, {"allow" : "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", "frameborder": "0", "referrerpolicy" : "strict-origin-when-cross-origin", "allowfullscreen" : "true"});
 					}
 					//Or it's a local file
 					else
 					{
 						videoPath = "videos/" + videoPath;
 						let videoExtension = sectionVideoPathValue.split('.')[1];
-						
+
 						let videoElement = createSourceElement(videoGrpContainer, 'video', videoPath, 'video-info', videoSize, {"type" : "video/" + videoExtension});
 						videoElement.setAttribute('controls',true);
 					}
@@ -473,41 +452,3 @@ function matchVimeoURL(url) {
 function askContent(sourceJson){
 	fillPage(sourceJson);
 }
-
-/*function askContent(sourceJson){
-	var head = document.getElementsByTagName('head')[0];
-
-	//use class, as we can't reference by id
-	var element = head.getElementsByClassName("json")[0];
-
-	try {
-	 element.parentNode.removeChild(element);
-	}
-	catch (e) {}
-
-	var script = document.createElement('script');
-	script.type = 'text/javascript';
-	script.src = sourceJson;
-	script.className = "json";
-	script.async = false;
-	head.appendChild(script);
-
-	//call the postload function after a slight delay to allow the json to load
-	window.setTimeout(fillPage(TestToolPage), 100)
-
-	//$.getJSON(sourceJson, function(data) {fillPage(data);});
-}*/
-
-/*function old_askContent(sourceJson){
-	let request = new XMLHttpRequest();
-	request.onreadystatechange = fillPage();
-	request.overrideMimeType("application/json");
-    request.open("GET", sourceJson, true);
-    request.onreadystatechange = function() {
-        if (request.readyState === 4 && request.status == "200") {
-            fillPage(request.responseText);
-        }
-    }
-    request.send(null);
-}*/
-

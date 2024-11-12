@@ -1,7 +1,7 @@
 let Tool = {
     "Title": "Animation temps réel",
     "Sumary": "Chez Miam!animation de puis 2020, j'ai travaillé sur leurs deux séries en temps réel : Edmond & Lucy (réalisée sur Unity) et Les Minus (réalisée sur Unreal).",
-    "Visual": "images/MiamProds.png",
+    "Visual": "images/Miam.png",
     "Manual": [
         {
             "Type" : "SectionName",
@@ -26,12 +26,20 @@ let Tool = {
         {
             "Type": "Text",
             "Value": "Le travail technique réalisée sur ces deux séries a été présenté au public lors de plusieurs conférences organisées par Unreal et devant des étudiants en études supérieures (filières ATI de l’université de Paris et Filière JIN de l’ENSIIE & TSP)."
-        }
+        },
+        {
+            "Type" : "Video",
+            "Value" : "https://www.youtube.com/embed/I-jcYwezGPs"
+        },
     ],
     "Faq": [
         {
             "Type" : "SectionName",
             "Value" : "Edmond & Lucy"
+        },
+        {
+            "Type": "Header",
+            "Value": "Avril 2020 – 2023 "
         },
         {
             "Type": "Text",
@@ -54,6 +62,10 @@ let Tool = {
             "Value": "La Boardmachine, elle, permet aux boarders de créer des mises en scène 3D avec les différents assets de la série (décors, personnages…). Développé sur Unity, cet outil est fournit aux boarders sous forme d’exécutable. Couplé à un module de contrôle des accès, cela permet aux boarders à distance d’utiliser l’outil sur leur propre machine, sans connexion aux infrastructures miam. Cet outil a permit d’améliorer la qualité des boards et de réduire le nombre de retakes. Équipée du module de livelink, la boardmachine a également été utilisée par notre prestataire Jungler à l’étape de l’animation."
         },
         {
+            "Type" : "Video",
+            "Value" : "https://www.youtube.com/embed/9EUOyBUL5KM"
+        },
+        {
             "Type": "Text",
             "Value": "Post livraison de la série une étape de récupération, optimisation et réorganisation du code en librairies Unity a également été effectuée."
         },
@@ -66,6 +78,10 @@ let Tool = {
         {
             "Type" : "SectionName",
             "Value" : "Les Minus"
+        },
+        {
+            "Type": "Header",
+            "Value": "Mai 2023 – Aujourd’hui"
         },
         {
             "Type": "Text",

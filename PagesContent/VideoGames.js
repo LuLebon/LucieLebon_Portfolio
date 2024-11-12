@@ -1,7 +1,7 @@
 let Catego = {
     "Title": "Jeux Video",
     "Sumary": "Entre 2018 et 2019, j'ai travaillé dans deux studios de jeu vidéo : Endroad et Gerwin.",
-    "Visual": "images/VideoGamesLineUp.png",
+    "Visual": "images/Fallback.jpg",
     "Manual": [
         {
             "Type" : "SectionName",
@@ -40,7 +40,11 @@ let Catego = {
         {
             "Type": "Text",
             "Value": "J’étais en charge de l’intégration de l’audio et ais développé plusieurs outils dans ce but. Le principal était un système d’audio matérials : Dans une zone sélectionné, un audio-material va être associé automatiquement à chaque mesh en fonction de sa texture."
-        },           
+        }, 
+        {
+            "Type" : "Image",
+            "Value" : "EndroadAudioSurfaces_Square.PNG"
+        },          
         {
             "Type": "Text",
             "Value": "J’ai aussi travaillé sur les Uis (générées via le code). J’ai enrichi la bibliothèque existante et créé les outils de débogage d’UI."
@@ -52,7 +56,11 @@ let Catego = {
         {
             "Type": "Text",
             "Value": "Disponible sur Steam, le jeu à  87 % de reviews positives."
-        },         
+        }, 
+        {
+            "Type": "Video",
+            "Value": "https://www.youtube.com/embed/coFkHtFi28Y"
+        },            
     ],
     "Dev": [
         {
@@ -66,7 +74,12 @@ let Catego = {
         {
             "Type": "Text",
             "Value": "Les événements météos sont gérés via un node editor et un ensemble de shaders."
-        }    
+        },    
+        {
+            "Type" : "Video",
+            "Value" : "https://www.youtube.com/embed/SfbwfLjqabw"
+        }
+        
     ]
 }
 
