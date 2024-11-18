@@ -1,7 +1,7 @@
 let Catego = {
     "Title": "Réalité Virtuelle",
     "Sumary": "Pendant 3 ans j'ai été au bureau d'une association de réalité virtuelle, ce qui fut l'occasion de découvrir et faire découvrir cette technologie qui se démocratisait alors.",
-    "Visual": "images/VideoGamesLineUp.png",
+    "Visual": "images/LaboPotions_Square.PNG",
     "Manual": [
         {
             "Type" : "SectionName",

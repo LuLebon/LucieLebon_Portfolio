@@ -3471,7 +3471,8 @@ table.alt tfoot {
 
 .wrapper.style1 {
     background-color: #5e42a6;
-    color: #ffffff
+    color: #ffffff;
+    text-shadow: -1px 0 #00000066, 0 1px #00000066, 1px 0 #00000066, 0 -1px #00000066;
 }
 
 .wrapper>.title {
@@ -4661,5 +4662,6 @@ a > .table-title-text:hover{
     #intro  h1
     {
         padding: 0;
+        text-shadow: -1px 0 #00000088, 0 1px #00000088, 1px 0 #00000088, 0 -1px #00000088;
     }
 }
