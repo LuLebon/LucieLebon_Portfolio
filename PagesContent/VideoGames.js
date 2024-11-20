@@ -13,15 +13,15 @@ let Catego = {
         },
         {
             "Type": "Text",
-            "Value": "Arrivée chez Gerwin pendant le développement de Bravospeed, j’ai travaillé sur le code gameplay et l’intégration des UIs, mais aussi la diminution du poids de l’application et l’intégration des analytics (AB testing, entonnoirs…)."
+            "Value": "Je suis arrivée chez Gerwin pendant le développement de Bravospeed, un jeu mobile de loterie gratuite dévelopé sur Unity. j’ai travaillé sur le code gameplay et l’intégration des UIs, mais aussi la diminution du poids de l’application et l’intégration des analytics (AB testing, entonnoirs…)."
         },
         {
             "Type": "Text",
-            "Value": "Bravospeed étant un jeu de loterie gratuite sur Mobile, une attention toute particulière devait être portée à deux éléments :"
+            "Value": "Bravospeed étant un jeu de loterie sur Mobile, une attention toute particulière devait être portée à deux éléments :"
         },
         {
             "Type": "List",
-            "Value": ["La responsivité des Uis.","Les connexions à la base de données."]
+            "Value": ["La responsivité des UIs.","Les connexions à la base de données."]
         }
     ],
     "Faq": [
@@ -47,7 +47,7 @@ let Catego = {
         },          
         {
             "Type": "Text",
-            "Value": "J’ai aussi travaillé sur les Uis (générées via le code). J’ai enrichi la bibliothèque existante et créé les outils de débogage d’UI."
+            "Value": "J’ai aussi travaillé sur les UIs (générées via code). J’ai enrichi la bibliothèque existante et créé les outils de débogage d’UI."
         },            
         {
             "Type": "Text",
@@ -55,7 +55,7 @@ let Catego = {
         },            
         {
             "Type": "Text",
-            "Value": "Disponible sur Steam, le jeu à  87 % de reviews positives."
+            "Value": "Disponible sur Steam, le jeu a 87 % de reviews positives."
         }, 
         {
             "Type": "Video",
@@ -70,7 +70,11 @@ let Catego = {
         {
             "Type": "Text",
             "Value": "Dans le cadre de mon projet de fin d’études, j’ai travaillé sur un module Unity de météo pour le studio Zero Games Studio."
-        },          
+        },
+        {
+            "Type": "Image",
+            "Value": "WeatherManager.png"
+        },         
         {
             "Type": "Text",
             "Value": "Les événements météos sont gérés via un node editor et un ensemble de shaders."

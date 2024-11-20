@@ -46,6 +46,14 @@ let Tool = {
             "Value": "Pour Edmond & Lucy, première série en temps réel de Miam animation, j’ai travaillé principalement sur deux axes : La création d’outils de prod pour dégager du temps à l’équipe de production et la boardmachine, un outil destiné aux boarders."
         },
         {
+            "Type": "Image",
+            "Value": "Edmond.png"
+        },
+        {
+            "Type": "Header",
+            "Value": "Outils de production (Python)"
+        },
+        {
             "Type": "Text",
             "Value": "Les outils de production ont permis une semi automatisation de : "
         },
@@ -58,8 +66,12 @@ let Tool = {
             "Value": "A titre d’exemple, grâce à l’outil de création de breakdown, la tâche est passée de 3 jours par semaine à 1."
         },
         {
+            "Type": "Header",
+            "Value": "BoardMachine (Unity)"
+        },
+        {
             "Type": "Text",
-            "Value": "La Boardmachine, elle, permet aux boarders de créer des mises en scène 3D avec les différents assets de la série (décors, personnages…). Développé sur Unity, cet outil est fournit aux boarders sous forme d’exécutable. Couplé à un module de contrôle des accès, cela permet aux boarders en télétravail d’utiliser l’outil sur leur propre machine, sans connexion aux infrastructures miam. Cet outil a permis d’améliorer la qualité des boards et de réduire le nombre de retakes. Équipée du module de livelink, la boardmachine a également été utilisée par notre prestataire Jungler à l’étape de l’animation."
+            "Value": "La Boardmachine, elle, permet aux boarders de créer des mises en scène 3D avec les différents assets de la série (décors, personnages…). Développé sur Unity, cet outil est fournit aux boarders sous forme d’exécutable. Les assets sont chargés sous forme de bundles. Couplé à un module de contrôle des accès, cela permet aux boarders en télétravail d’utiliser l’outil sur leur propre machine, sans connexion aux infrastructures miam. Cet outil a permis d’améliorer la qualité des boards et de réduire le nombre de retakes. Équipée du module de livelink, la boardmachine a également été utilisée par notre prestataire Jungler à l’étape de l’animation."
         },
         {
             "Type" : "Video",
@@ -67,11 +79,39 @@ let Tool = {
         },
         {
             "Type": "Text",
-            "Value": "Post livraison de la série une étape de récupération, optimisation et réorganisation du code en librairies Unity a également été effectuée."
+            "Value": "En complément de la BoardMachine, il existe un projet de génération des bundles. Ce projets contient plusieurs éléments : "
+        },
+        {
+            "Type" : "List",
+            "Value" : ["Import d'assets au format GlTF (depuis Blender, Unreal ou Maya)","Nettoyage automatisé des assets (suppression des éléments de rigs, ajout de colliders...) ", "Génération automatisée des bundles et éléments associés."]
+        },
+        {
+            "Type": "Header",
+            "Value": "Librairies Miam (Unity)"
         },
         {
             "Type": "Text",
-            "Value": "J’ai aussi travaillé à l’optimisation des performancs et du poids de Le Voyage de la Chose, un jeu plateformer réalisé sur Unity et dans lequel on incarne la Chose, un des personnage de Edmond et Lucy."
+            "Value": "Post livraison de la série une étape de récupération, optimisation et réorganisation du code en librairies Unity a également été effectuée."
+        },
+        {
+            "Type": "Header",
+            "Value": "Voyage de La Chose (Unity)"
+        },
+        {
+            "Type": "Text",
+            "Value": "Le Voyage de La Chose est un platformer réalisé sur Unity et dans lequel on incarne la Chose, un des personnage de Edmond et Lucy. Le jeu sortira sur Android début 2025."
+        },
+        {
+            "Type": "Image",
+            "Value": "VoyageChose.png"
+        },
+        {
+            "Type": "Text",
+            "Value": "Pour ce jeu j’ai travaillé sur : "
+        },
+        {
+            "Type": "List",
+            "Value": ["L’optimisation des performances.", "La réduction du poids de l’application."]
         }
     ],
     "Dev": [
@@ -86,6 +126,10 @@ let Tool = {
         {
             "Type": "Text",
             "Value": "La seconde série en temps réel de Miam, Les Minus, est réalisée sur Unreal. La préparation de son pipe a été entamée dès la fin d’Edmond et Lucy. Un travail de rétro-analyse du pipe Edmond (appuyé par le post mortem) a été effectué. Cela nous a permis de déterminer les outils à développer sur Unreal avant l’arrivée des équipes."
+        },
+        {
+            "Type": "Image",
+            "Value": "Minus.png"
         },
         {
             "Type": "Text",
